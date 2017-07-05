@@ -1,0 +1,10 @@
+html {
+    font-size: 20px;
+}
+
+#main {
+    width: 50px;
+    min-width: 100px;
+    border: 1px solid black;
+    font-size: 2rem;
+}

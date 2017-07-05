@@ -1,0 +1,13 @@
+body div {
+    background-color: black;
+    border: 1px solid #FF0000;
+    border-radius: 7rem;
+    /* Standart Syntax, Opera */
+    -webkit-border-radius: 7rem;
+    /* for Safari, Google Chrome */
+    -moz-border-radius: 7rem;
+    /* for Mozilla */
+    width: 95%;
+    height: auto;
+    display: table;
+}
