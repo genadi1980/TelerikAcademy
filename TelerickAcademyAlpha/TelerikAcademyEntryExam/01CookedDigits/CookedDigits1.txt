@@ -1,0 +1,78 @@
+namespace _01CookedDigits
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    public class CookedDigits
+    {
+        public static void Main()
+        {
+
+            double entry = double.Parse(Console.ReadLine());
+            var input = Math.Abs(entry);
+            var sum = 0D;
+
+            do
+            {           
+            var reminder = input - Math.Truncate(input);
+
+            if (reminder > 0)
+            {
+                var n = input.ToString();
+                    sum = 0;
+                    var number = n.Split(new[] { '-', '.' }, StringSplitOptions.RemoveEmptyEntries);
+                var leftsideLenght = number[0].Length;
+                var rightSideLenght = number[1].Length;
+                var leftSide = long.Parse(number[0]);
+                var rigtSide = long.Parse(number[1]);
+
+                var leftSum = CalculateSum(leftSide, leftsideLenght);
+                var rightSum = CalculateSum(rigtSide, rightSideLenght);
+
+                sum = leftSum + rightSum;
+                input = sum;
+                    
+                }
+            else
+            {
+                long number = (long)input;
+                    sum = 0;
+                do
+                {
+                        
+                        var digit = number % 10;
+                    number = number /= 10;
+                    sum += digit;
+                } while (number > 0);
+                input = sum;
+                    
+            }
+
+                
+            } while (input > 9);
+
+            Console.WriteLine(input);
+
+        }
+        private static double CalculateSum(long n, int lenght)
+        {
+            var sum = 0D;
+            n = Math.Abs(n);
+            for (int i = 0; i < lenght; i++)
+            {
+                var digit = n % 10;
+                sum += digit;
+                n /= 10;
+
+            }
+
+            return sum;
+        }
+
+
+
+    }
+}
