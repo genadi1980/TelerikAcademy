@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class CookedDigits
+    public class CrookedDigits
     {
         public static void Main()
         {

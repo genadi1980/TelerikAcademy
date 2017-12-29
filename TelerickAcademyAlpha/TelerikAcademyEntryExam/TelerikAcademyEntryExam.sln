@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01CookedDigits", "01CookedDigits\01CookedDigits.csproj", "{C18B3B73-1F74-4B3C-B65C-47C8F1BF0AFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01CrookedDigits", "01CookedDigits\01CrookedDigits.csproj", "{C18B3B73-1F74-4B3C-B65C-47C8F1BF0AFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrookedStairs", "CrookedStairs\CrookedStairs.csproj", "{FC9EEDC4-993E-4F34-AE05-65F347FF0172}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02CrookedStairs", "CrookedStairs\02CrookedStairs.csproj", "{FC9EEDC4-993E-4F34-AE05-65F347FF0172}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03CrookedWalls", "03CrookedWalls\03CrookedWalls.csproj", "{CBF96F69-4A28-4B27-8757-01C126F8954C}"
 EndProject
